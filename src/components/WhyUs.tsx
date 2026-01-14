@@ -4,9 +4,9 @@ export default function WhyUs() {
   const features = [
     {
       icon: ShieldCheck,
-      title: "Garantia de Qualidade",
+      title: "Garantia de Fábrica",
       description:
-        "Todas as reparações têm garantia de peças e mão-de-obra. Usamos apenas peças originais ou equivalentes certificadas.",
+        "Realizamos revisões oficiais sem perda da garantia de fábrica da sua viatura. Qualidade certificada em todos os serviços.",
     },
     {
       icon: Award,

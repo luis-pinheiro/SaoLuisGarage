@@ -9,40 +9,40 @@ import {
 
 const services = [
   {
-    title: "Diagnóstico Computorizado",
+    title: "Mecânica e Diagnóstico",
     description:
-      "Identificamos avarias eletrónicas com equipamento de última geração para todas as marcas.",
+      "Reparações mecânicas completas e diagnóstico eletrónico avançado para todas as marcas.",
     icon: Laptop,
   },
   {
-    title: "Revisão e Manutenção",
+    title: "Revisão Oficial",
     description:
-      "Mudança de óleo, filtros e verificação de pontos de segurança conforme o fabricante.",
+      "Manutenção preventiva conforme o plano da marca, sem perder a garantia de fábrica.",
     icon: Car,
   },
   {
-    title: "Travões e ABS",
+    title: "Eletricidade e Eletrónica",
     description:
-      "Substituição de pastilhas, discos e reparação de sistemas de travagem ABS/ESP.",
-    icon: Disc,
+      "Reparação de sistemas elétricos, centralinas, sensores e substituição de baterias.",
+    icon: Laptop,
   },
   {
-    title: "Pneus e Calibração",
+    title: "Pneus e Alinhamento",
     description:
-      "Venda, montagem e calibração de pneus. Alinhamento de direção computadorizado.",
+      "Venda, montagem e calibração de pneus. Garantimos a segurança e longevidade dos seus pneus.",
     icon: CircleDot,
   },
   {
     title: "Ar Condicionado",
     description:
-      "Carregamento de gás, higienização de condutas e reparação de fugas no sistema.",
+      "Carregamento, higienização e reparação de sistemas de climatização para o seu conforto.",
     icon: Wind,
   },
   {
-    title: "Pré-Inspeção IPO",
+    title: "Travões e Segurança",
     description:
-      "Check-up completo para garantir que o seu carro passa na inspeção à primeira.",
-    icon: ClipboardCheck,
+      "Verificação e substituição de pastilhas, discos e componentes críticos de segurança.",
+    icon: Disc,
   },
 ];
 

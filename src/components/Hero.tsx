@@ -1,16 +1,27 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Phone, CheckCircle2 } from "lucide-react";
+import heroBg from "../../public/img/hero-bg.jpg";
 
 export default function Hero() {
   return (
-    <section className="relative h-[650px] flex items-center bg-slate-900 overflow-hidden">
+    <section className="relative flex items-center bg-slate-900 overflow-hidden">
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/90 to-slate-900/60 z-10"></div>
 
-      {/* Background Image Placeholder - Replace with actual image */}
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2574&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat opacity-40 mix-blend-overlay"></div>
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={heroBg}
+          alt="Oficina Mecânica São Luis Garagem"
+          fill
+          priority
+          placeholder="blur"
+          className="object-cover object-center opacity-40 mix-blend-overlay"
+          sizes="100vw"
+        />
+      </div>
 
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 relative z-20 py-32">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 relative z-20 pt-32 mb-20">
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-1 mb-6 backdrop-blur-sm">
             <span className="flex h-2 w-2 rounded-full bg-secondary animate-pulse"></span>

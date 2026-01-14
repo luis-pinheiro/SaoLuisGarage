@@ -17,8 +17,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm leading-relaxed max-w-xs text-slate-400">
-              A sua oficina de confiança em Oliveira de Azeméis. Comprometidos com a
-              qualidade, rapidez e transparência em todos os serviços.
+              A sua oficina de confiança em Oliveira de Azeméis. Comprometidos
+              com a qualidade, rapidez e transparência em todos os serviços.
             </p>
           </div>
 
@@ -27,7 +27,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-6">Links Rápidos</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="#" className="hover:text-white transition-colors">
+                <Link href="/" className="hover:text-white transition-colors">
                   Início
                 </Link>
               </li>
@@ -63,24 +63,37 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-6">Informações</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="#" className="hover:text-white transition-colors">
+                <Link href="/privacidade" className="hover:text-white transition-colors">
                   Política de Privacidade
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white transition-colors">
+                <Link href="/termos" className="hover:text-white transition-colors">
                   Termos e Condições
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white transition-colors">
+                <Link
+                  href="https://www.livroreclamacoes.pt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
                   Livro de Reclamações
                 </Link>
               </li>
             </ul>
             <p className="mt-8 text-xs text-slate-500">
               © {new Date().getFullYear()} São Luis Garagem. Todos os direitos
-              reservados.
+              reservados. | Feito por{" "}
+              <Link
+                href="https://luis-pinheiro.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                Luis Pinheiro
+              </Link>
             </p>
           </div>
         </div>
