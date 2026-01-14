@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "Aveiro",
     "São Luis Garagem",
     "eletricidade auto",
-    "ar condicionado auto"
+    "ar condicionado auto",
   ],
   metadataBase: new URL("https://saoluisgaragem.pt"),
   authors: [{ name: "São Luis Garagem" }],
@@ -95,7 +95,7 @@ export default function RootLayout({
     image: "https://saoluisgaragem.pt/img/logo.svg",
     "@id": "https://saoluisgaragem.pt",
     url: "https://saoluisgaragem.pt",
-    telephone: "+351916580788",
+    telephone: "+351916580788, +351256112112",
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",

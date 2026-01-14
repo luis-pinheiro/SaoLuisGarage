@@ -35,7 +35,8 @@ export default function Contact() {
             <p className="text-muted-foreground mb-8">
               Preencha o formulário e entraremos em contacto para confirmar o
               agendamento. Ou ligue diretamente para{" "}
-              <span className="font-semibold text-primary">916 580 788</span>.
+              <span className="font-semibold text-primary">916 580 788</span> ou{" "}
+              <span className="font-semibold text-primary">256 112 112</span>.
             </p>
 
             {state.success ? (
@@ -228,14 +229,22 @@ export default function Contact() {
                     <h3 className="text-lg font-semibold text-foreground">
                       Telefone
                     </h3>
-                    <a
-                      href="tel:+351916580788"
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      +351 916 580 788
-                    </a>
+                    <div className="flex flex-col">
+                      <a
+                        href="tel:+351916580788"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        +351 916 580 788
+                      </a>
+                      <a
+                        href="tel:+351256112112"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        +351 256 112 112
+                      </a>
+                    </div>
                     <p className="text-sm text-muted-foreground mt-1">
-                      Chamada para rede móvel nacional
+                      Chamada para rede móvel e fixa nacional
                     </p>
                   </div>
                 </div>
@@ -248,9 +257,7 @@ export default function Contact() {
                     <h3 className="text-lg font-semibold text-foreground">
                       Email
                     </h3>
-                    <p className="text-muted-foreground">
-                      geral@saoluisgaragem.pt
-                    </p>
+                    <p className="text-muted-foreground">joaoplacido@ua.pt</p>
                   </div>
                 </div>
 
