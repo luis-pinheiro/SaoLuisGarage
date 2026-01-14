@@ -7,23 +7,25 @@ Web application for **Garagem São Luís**, a certified auto repair shop located
 
 ## 🚀 Tech Stack
 
-Built with the latest web technologies for performance and SEO:
+Built with the latest web technologies for performance, SEO, and reliability:
 
 - **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
 - **UI Library**: [React 19](https://react.dev/)
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Email**: [Nodemailer](https://nodemailer.com/) (Contact Form Integration)
+- **Email**: [Nodemailer](https://nodemailer.com/) (Server Actions)
 - **Validation**: [Zod](https://zod.dev/)
 - **Icons**: [Lucide React](https://lucide.dev/)
+- **Testing**: [Vitest](https://vitest.dev/)
 
 ## ✨ Key Features
 
 - **Responsive Design**: Optimized for all devices (Mobile, Tablet, Desktop).
-- **Modern UI/UX**: clean, professional aesthetic matching the brand identity.
-- **Contact Form**: Functional email dispatch using Nodemailer.
+- **Modern UI/UX**: Clean, professional aesthetic matching the brand identity.
+- **Contact Form**: Functional email dispatch using Nodemailer & Server Actions.
 - **Google Maps Integration**: Direct location visualization.
-- **SEO Optimized**: Built with Next.js best practices for search visibility.
+- **SEO Optimized**: Built with Next.js best practices (Sitemap, Robots, Metadata).
+- **Legal Pages**: Dedicated Privacy Policy and Terms of Service pages.
 - **Performance**: Fast loading times and optimized assets.
 
 ## 🛠️ Getting Started
@@ -49,8 +51,15 @@ Built with the latest web technologies for performance and SEO:
 3. Set up Environment Variables:
    Create a `.env.local` file in the root directory and add your email configuration:
    ```env
-   EMAIL_USER=your-email@gmail.com
-   EMAIL_PASS=your-app-password
+   # SMTP Configuration
+   SMTP_HOST=smtp.example.com
+   SMTP_PORT=587
+   SMTP_SECURE=false # true for 465, false for other ports
+   SMTP_USER=your-email@example.com
+   SMTP_PASS=your-app-password
+
+   # Business Email
+   CONTACT_EMAIL=geral@saoluisgaragem.pt
    ```
 
 4. Run the development server:
@@ -60,16 +69,28 @@ Built with the latest web technologies for performance and SEO:
 
 5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+### Running Tests
+
+To run the test suite (Vitest):
+
+```bash
+npm test
+```
+
 ## 📁 Project Structure
 
 ```
-├── app/                  # Next.js App Router pages and layouts
-│   ├── actions/          # Server actions (e.g., email sending)
-│   ├── layout.tsx        # Root layout
-│   └── page.tsx          # Home page
 ├── src/
-│   └── components/       # Reusable UI components (Hero, Services, Contact, etc.)
+│   ├── app/              # Next.js App Router pages and layouts
+│   │   ├── actions.ts    # Server actions (email logic)
+│   │   ├── privacidade/  # Privacy Policy page
+│   │   ├── termos/       # Terms of Service page
+│   │   └── ...
+│   ├── components/       # Reusable UI components (Hero, Services, Contact, etc.)
+│   ├── lib/              # Utility functions
+│   └── __tests__/        # Unit and Integration tests
 ├── public/               # Static assets (images, icons)
+├── conductor/            # Project documentation and planning
 └── ...
 ```
 
