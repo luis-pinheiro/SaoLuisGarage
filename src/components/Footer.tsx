@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Wrench } from "lucide-react";
+import { Wrench, Facebook } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -20,6 +20,17 @@ export default function Footer() {
               A sua oficina de confiança em Oliveira de Azeméis. Comprometidos
               com a qualidade, rapidez e transparência em todos os serviços.
             </p>
+            <div className="flex gap-4 mt-6">
+              <Link
+                href="https://www.facebook.com/JoaoPlacidoOficina/?locale=pt_PT"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-slate-800 p-2 rounded-lg hover:bg-primary hover:text-white text-slate-400 transition-all"
+                aria-label="Visite nosso Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </Link>
+            </div>
           </div>
 
           {/* Quick Links */}

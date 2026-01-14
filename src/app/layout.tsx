@@ -118,7 +118,7 @@ export default function RootLayout({
         closes: "18:00",
       },
     ],
-    sameAs: [],
+    sameAs: ["https://www.facebook.com/JoaoPlacidoOficina/?locale=pt_PT"],
   };
 
   return (
