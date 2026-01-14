@@ -39,7 +39,7 @@ export default function Hero() {
             </Link>
 
             <Link
-              href="tel:+351912345678"
+              href="tel:+351916580788"
               className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-white/10 border border-white/20 rounded-lg hover:bg-white/20 transition-all backdrop-blur-sm"
             >
               <Phone className="mr-2 h-5 w-5" />

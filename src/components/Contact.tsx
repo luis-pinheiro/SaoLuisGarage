@@ -18,7 +18,7 @@ export default function Contact() {
             <p className="text-muted-foreground mb-8">
               Preencha o formulário e entraremos em contacto para confirmar o
               agendamento. Ou ligue diretamente para{" "}
-              <span className="font-semibold text-primary">210 000 000</span>.
+              <span className="font-semibold text-primary">916 580 788</span>.
             </p>
 
             <form className="space-y-6">
@@ -134,9 +134,14 @@ export default function Contact() {
                     <h3 className="text-lg font-semibold text-foreground">
                       Telefone
                     </h3>
-                    <p className="text-muted-foreground">+351 210 000 000</p>
+                    <a
+                      href="tel:+351916580788"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      +351 916 580 788
+                    </a>
                     <p className="text-sm text-muted-foreground mt-1">
-                      Chamada para rede fixa nacional
+                      Chamada para rede móvel nacional
                     </p>
                   </div>
                 </div>
