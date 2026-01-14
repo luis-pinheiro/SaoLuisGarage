@@ -11,22 +11,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 1,
         },
         {
-            url: `${baseUrl}/#contactos`,
+            url: `${baseUrl}/privacidade`,
             lastModified: new Date(),
             changeFrequency: "monthly",
-            priority: 0.8,
+            priority: 0.5,
         },
         {
-            url: `${baseUrl}/#servicos`,
+            url: `${baseUrl}/termos`,
             lastModified: new Date(),
             changeFrequency: "monthly",
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/#sobre`,
-            lastModified: new Date(),
-            changeFrequency: "monthly",
-            priority: 0.8,
+            priority: 0.5,
         },
     ];
 }
