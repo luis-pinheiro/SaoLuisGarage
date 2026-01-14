@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: "/",
             disallow: ["/admin", "/private"],
         },
-        sitemap: "https://saoluisgaragem.pt/sitemap.xml",
+        sitemap: "https://sao-luis-garage.vercel.app/sitemap.xml",
     };
 }

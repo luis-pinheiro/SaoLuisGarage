@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "eletricidade auto",
     "ar condicionado auto",
   ],
-  metadataBase: new URL("https://saoluisgaragem.pt"),
+  metadataBase: new URL("https://sao-luis-garage.vercel.app"),
   authors: [{ name: "São Luis Garagem" }],
   creator: "São Luis Garagem",
   publisher: "São Luis Garagem",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_PT",
-    url: "https://saoluisgaragem.pt",
+    url: "https://sao-luis-garage.vercel.app",
     siteName: "São Luis Garagem",
     title: "São Luis Garagem - Oficina Mecânica em Oliveira de Azeméis",
     description:
@@ -92,9 +92,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "AutoRepair",
     name: "São Luis Garagem",
-    image: "https://saoluisgaragem.pt/img/logo.svg",
-    "@id": "https://saoluisgaragem.pt",
-    url: "https://saoluisgaragem.pt",
+    image: "https://sao-luis-garage.vercel.app/img/logo.svg",
+    "@id": "https://sao-luis-garage.vercel.app",
+    url: "https://sao-luis-garage.vercel.app",
     telephone: "+351916580788, +351256112112",
     priceRange: "$$",
     address: {
