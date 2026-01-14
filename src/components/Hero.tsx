@@ -10,7 +10,7 @@ export default function Hero() {
       {/* Background Image Placeholder - Replace with actual image */}
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2574&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat opacity-40 mix-blend-overlay"></div>
 
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 relative z-20 pt-16">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 relative z-20 pt-32">
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-1 mb-6 backdrop-blur-sm">
             <span className="flex h-2 w-2 rounded-full bg-secondary animate-pulse"></span>
@@ -20,13 +20,14 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6">
-            Mecânica de <span className="text-secondary">Precisão</span> e{" "}
-            <span className="text-blue-400">Confiança</span>.
+            Serviço Multimarca com{" "}
+            <span className="text-secondary">Qualidade</span> e{" "}
+            <span className="text-blue-400">Honestidade</span>.
           </h1>
 
           <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed max-w-xl">
-            Diagnóstico avançado, reparação multimarca e manutenção preventiva.
-            Cuidamos do seu carro com a honestidade e rapidez que você procura.
+            Revisão e reparação de todo o tipo de viaturas sem perder a garantia
+            de fábrica. O seu carro em boas mãos.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -47,10 +48,10 @@ export default function Hero() {
             </Link>
           </div>
 
-          <div className="flex items-center gap-6 text-slate-400 text-sm font-medium">
+          <div className="flex flex-wrap items-center gap-6 text-slate-400 text-sm font-medium">
             <div className="flex items-center gap-2">
               <CheckCircle2 className="h-5 w-5 text-secondary" />
-              <span>Garantia em Serviços</span>
+              <span>Manutenção sem Perda de Garantia</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="h-5 w-5 text-secondary" />
@@ -58,7 +59,7 @@ export default function Hero() {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="h-5 w-5 text-secondary" />
-              <span>Orçamentos Transparentes</span>
+              <span>Diagnóstico Avançado</span>
             </div>
           </div>
         </div>
