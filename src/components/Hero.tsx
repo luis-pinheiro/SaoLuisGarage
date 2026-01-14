@@ -10,7 +10,7 @@ export default function Hero() {
       {/* Background Image Placeholder - Replace with actual image */}
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2574&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat opacity-40 mix-blend-overlay"></div>
 
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 relative z-20 pt-32">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 relative z-20 py-32">
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-1 mb-6 backdrop-blur-sm">
             <span className="flex h-2 w-2 rounded-full bg-secondary animate-pulse"></span>
